@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/seven9/project/models/category/fields.yaml
+
+# Model Class name
+modelClass: Seven9\Project\Models\Category
+
+# Default redirect location
+defaultRedirect: seven9/project/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: seven9/project/categories/update/:id
+    redirectClose: seven9/project/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: seven9/project/categories
+    redirectClose: seven9/project/categories
+
+# Preview page
+preview:
+    title: Preview Category

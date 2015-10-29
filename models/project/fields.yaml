@@ -1,0 +1,57 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+Tabs:
+    fields:
+        name:
+            label: Name
+            span: auto
+            type: text
+        categories:
+            label: Category
+            span: auto
+            type: relation
+            tab: Category
+        description:
+            label: Description
+            span: full
+            type: richeditor
+        website:
+            label: Website
+            span: auto
+            type: text
+            placeholder: http://www.website.com
+        developed_by:
+            label: Developed By
+            span: auto
+            type: text
+        links:
+            label: Links
+            span: right
+            type: repeater
+            prompt: Add Links
+            form: 
+                fields:
+                    name: 
+                        label: Name
+                        type: text
+                        span: left
+                    links: 
+                        label: Links Name
+                        type: text
+                        span: right
+        images: 
+            label: Showcase Images 
+            span: full
+            type: fileupload 
+            tab: Showcase
+            mode: image
+
+        logo: 
+            label: App Logo
+            span: left
+            type: fileupload
+            mode: image
+            imageHeight: 140
+            imageWidth: 140
+

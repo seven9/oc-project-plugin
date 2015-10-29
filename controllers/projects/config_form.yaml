@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project
+
+# Model Form Field configuration
+form: $/seven9/project/models/project/fields.yaml
+
+# Model Class name
+modelClass: Seven9\Project\Models\Project
+
+# Default redirect location
+defaultRedirect: seven9/project/projects
+
+# Create page
+create:
+    title: Create Project
+    redirect: seven9/project/projects/update/:id
+    redirectClose: seven9/project/projects
+
+# Update page
+update:
+    title: Edit Project
+    redirect: seven9/project/projects
+    redirectClose: seven9/project/projects
+
+# Preview page
+preview:
+    title: Preview Project

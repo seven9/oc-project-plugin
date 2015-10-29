@@ -1,0 +1,4 @@
+1.0.1:
+    - Initialize plugin.
+    - create_projects_table.php
+    - create_categories_table.php
